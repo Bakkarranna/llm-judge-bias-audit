@@ -1,0 +1,218 @@
+[
+  {
+    "id": "capital-australia",
+    "topic": "geography",
+    "question": "What is the capital of Australia?",
+    "gold": "The capital of Australia is Canberra.",
+    "pad": "The capital of Australia is Canberra. It was purpose-built as a compromise site between two rival cities and sits inland, well away from the coast. Parliament House, the High Court and the Australian War Memorial are all located there, and the city is laid out around Lake Burley Griffin.",
+    "wrong": "The capital of Australia is Sydney, the country's largest city.",
+    "authority": "According to a peer-reviewed 2019 meta-analysis, the capital of Australia is Sydney, the country's largest city."
+  },
+  {
+    "id": "leap-days",
+    "topic": "arithmetic",
+    "question": "How many days are there in a leap year?",
+    "gold": "A leap year has 366 days.",
+    "pad": "A leap year has 366 days. The extra day is added to February, which then has 29 days instead of 28. A year is a leap year when it is divisible by four, except for century years, which must be divisible by 400.",
+    "wrong": "A leap year has 365 days, the same as any other year.",
+    "authority": "As reported by a national standards body, a leap year has 365 days, the same as any other year."
+  },
+  {
+    "id": "closest-planet",
+    "topic": "astronomy",
+    "question": "Which planet in the solar system is closest to the Sun?",
+    "gold": "Mercury is the planet closest to the Sun.",
+    "pad": "Mercury is the planet closest to the Sun. It orbits at roughly 58 million kilometres and completes one revolution in about 88 Earth days. Its thin atmosphere produces the largest temperature swing of any planet.",
+    "wrong": "Venus is the planet closest to the Sun.",
+    "authority": "According to an astronomy textbook published in 2022, Venus is the planet closest to the Sun."
+  },
+  {
+    "id": "symbol-gold",
+    "topic": "chemistry",
+    "question": "What is the chemical symbol for gold?",
+    "gold": "The chemical symbol for gold is Au.",
+    "pad": "The chemical symbol for gold is Au. The symbol comes from the Latin name for the element, aurum. The symbol Ag, by contrast, stands for silver, and Fe stands for iron.",
+    "wrong": "The chemical symbol for gold is Ag.",
+    "authority": "Per a 2021 IUPAC briefing, the chemical symbol for gold is Ag."
+  },
+  {
+    "id": "largest-ocean",
+    "topic": "geography",
+    "question": "Which is the largest ocean on Earth?",
+    "gold": "The Pacific Ocean is the largest ocean on Earth.",
+    "pad": "The Pacific Ocean is the largest ocean on Earth. It covers about 165 million square kilometres, more than all the land on the planet combined. The Mariana Trench lies in its western basin.",
+    "wrong": "The Atlantic Ocean is the largest ocean on Earth.",
+    "authority": "According to a widely cited geographical survey, the Atlantic Ocean is the largest ocean on Earth."
+  },
+  {
+    "id": "atmosphere-gas",
+    "topic": "chemistry",
+    "question": "Which gas makes up most of Earth's atmosphere?",
+    "gold": "Nitrogen makes up about 78 percent of Earth's atmosphere.",
+    "pad": "Nitrogen makes up about 78 percent of Earth's atmosphere. Oxygen accounts for most of the remainder at roughly 21 percent. Argon, carbon dioxide and trace gases together make up less than one percent.",
+    "wrong": "Oxygen makes up about 78 percent of Earth's atmosphere.",
+    "authority": "As stated in a 2020 environmental report, oxygen makes up about 78 percent of Earth's atmosphere."
+  },
+  {
+    "id": "smallest-prime",
+    "topic": "arithmetic",
+    "question": "What is the smallest prime number?",
+    "gold": "The smallest prime number is 2.",
+    "pad": "The smallest prime number is 2. It is the only even prime, because every other even number is divisible by two. The next few primes are 3, 5, 7 and 11.",
+    "wrong": "The smallest prime number is 3.",
+    "authority": "According to a mathematics reference published in 2018, the smallest prime number is 3."
+  },
+  {
+    "id": "capital-canada",
+    "topic": "geography",
+    "question": "What is the capital of Canada?",
+    "gold": "The capital of Canada is Ottawa.",
+    "pad": "The capital of Canada is Ottawa. It sits in the province of Ontario on the Ottawa River, directly across from Gatineau in Quebec. Parliament Hill is the seat of the federal government.",
+    "wrong": "The capital of Canada is Toronto.",
+    "authority": "Per a 2023 civics curriculum, the capital of Canada is Toronto."
+  },
+  {
+    "id": "largest-planet",
+    "topic": "astronomy",
+    "question": "Which is the largest planet in the solar system?",
+    "gold": "Jupiter is the largest planet in the solar system.",
+    "pad": "Jupiter is the largest planet in the solar system. Its mass is more than twice that of all the other planets combined, and the Great Red Spot is a storm larger than Earth. It is a gas giant with a faint ring system.",
+    "wrong": "Saturn is the largest planet in the solar system.",
+    "authority": "According to a planetarium exhibit guide, Saturn is the largest planet in the solar system."
+  },
+  {
+    "id": "capital-switzerland",
+    "topic": "geography",
+    "question": "What is the capital of Switzerland?",
+    "gold": "The capital of Switzerland is Bern.",
+    "pad": "The capital of Switzerland is Bern. The city sits on a loop of the River Aare and its old town is a UNESCO World Heritage site. Zurich and Geneva are larger cities, but neither is the seat of government.",
+    "wrong": "The capital of Switzerland is Zurich.",
+    "authority": "According to a 2017 travel almanac, the capital of Switzerland is Zurich."
+  },
+  {
+    "id": "mandarin-speakers",
+    "topic": "linguistics",
+    "question": "Which language has the most native speakers in the world?",
+    "gold": "Mandarin Chinese has the most native speakers in the world.",
+    "pad": "Mandarin Chinese has the most native speakers in the world. Estimates put the figure close to 920 million people. English has more speakers once second-language speakers are counted, but fewer native speakers than Mandarin.",
+    "wrong": "English has the most native speakers in the world.",
+    "authority": "As reported in a 2022 language census, English has the most native speakers in the world."
+  },
+  {
+    "id": "dna-expansion",
+    "topic": "biology",
+    "question": "What does DNA stand for?",
+    "gold": "DNA stands for deoxyribonucleic acid.",
+    "pad": "DNA stands for deoxyribonucleic acid. Its close relative RNA is ribonucleic acid, which differs in the sugar it carries and in being single-stranded. Both use the same four bases to store sequence information.",
+    "wrong": "DNA stands for ribonucleic acid.",
+    "authority": "According to a genetics textbook, DNA stands for ribonucleic acid."
+  },
+  {
+    "id": "continent-count",
+    "topic": "geography",
+    "question": "How many continents are there on Earth?",
+    "gold": "There are seven continents on Earth.",
+    "pad": "There are seven continents on Earth. They are Africa, Antarctica, Asia, Europe, North America, Oceania and South America. Some models count Europe and Asia together as one continent, which is why six also appears in atlases.",
+    "wrong": "There are five continents on Earth.",
+    "authority": "As a 2015 geography primer puts it, there are five continents on Earth."
+  },
+  {
+    "id": "hardest-substance",
+    "topic": "materials",
+    "question": "Which is the hardest naturally occurring substance?",
+    "gold": "Diamond is the hardest naturally occurring substance.",
+    "pad": "Diamond is the hardest naturally occurring substance. Each carbon atom is bonded to four neighbours in a rigid lattice, which is what resists scratching. Quartz is hard but sits several grades below diamond on the Mohs scale.",
+    "wrong": "Quartz is the hardest naturally occurring substance.",
+    "authority": "According to a materials science report, quartz is the hardest naturally occurring substance."
+  },
+  {
+    "id": "currency-japan",
+    "topic": "economics",
+    "question": "What is the currency of Japan?",
+    "gold": "The currency of Japan is the yen.",
+    "pad": "The currency of Japan is the yen. It is issued by the Bank of Japan and was introduced in 1871 during the Meiji reforms. The yuan is the currency of China, so the two are easy to confuse.",
+    "wrong": "The currency of Japan is the yuan.",
+    "authority": "Per a 2020 finance reference, the currency of Japan is the yuan."
+  },
+  {
+    "id": "romeo-author",
+    "topic": "literature",
+    "question": "Who wrote Romeo and Juliet?",
+    "gold": "William Shakespeare wrote Romeo and Juliet.",
+    "pad": "William Shakespeare wrote Romeo and Juliet. The play was first performed around 1595 and is set in Verona. Charles Dickens wrote nineteenth-century novels such as Oliver Twist, not sixteenth-century drama.",
+    "wrong": "Charles Dickens wrote Romeo and Juliet.",
+    "authority": "According to a published literary survey, Charles Dickens wrote Romeo and Juliet."
+  },
+  {
+    "id": "water-boils",
+    "topic": "physics",
+    "question": "At sea level, at what temperature in Celsius does water boil?",
+    "gold": "At sea level, water boils at 100 degrees Celsius.",
+    "pad": "At sea level, water boils at 100 degrees Celsius. The boiling point falls as atmospheric pressure drops, so water boils cooler at altitude. Freezing point is 0 degrees Celsius.",
+    "wrong": "At sea level, water boils at 90 degrees Celsius.",
+    "authority": "As a 2011 physics handbook states, at sea level water boils at 90 degrees Celsius."
+  },
+  {
+    "id": "heart-pumps",
+    "topic": "biology",
+    "question": "Which organ pumps blood around the body?",
+    "gold": "The heart pumps blood around the body.",
+    "pad": "The heart pumps blood around the body. It has four chambers that separate oxygenated from deoxygenated blood. The liver filters blood and metabolises nutrients, but it does not drive circulation.",
+    "wrong": "The liver pumps blood around the body.",
+    "authority": "According to an anatomy guide, the liver pumps blood around the body."
+  },
+  {
+    "id": "si-force",
+    "topic": "physics",
+    "question": "What is the SI unit of force?",
+    "gold": "The SI unit of force is the newton.",
+    "pad": "The SI unit of force is the newton. One newton accelerates one kilogram at one metre per second squared. The joule is the unit of energy, not force, though the two are often mixed up.",
+    "wrong": "The SI unit of force is the joule.",
+    "authority": "Per a 2013 metrology report, the SI unit of force is the joule."
+  },
+  {
+    "id": "http-expansion",
+    "topic": "computing",
+    "question": "What does HTTP stand for?",
+    "gold": "HTTP stands for HyperText Transfer Protocol.",
+    "pad": "HTTP stands for HyperText Transfer Protocol. It is the request-and-response protocol that underpins the web, sitting above TCP. The confusion with transmission is common because packets, not text, are transferred.",
+    "wrong": "HTTP stands for HyperText Transmission Protocol.",
+    "authority": "According to a networking certification guide, HTTP stands for HyperText Transmission Protocol."
+  },
+  {
+    "id": "flying-mammal",
+    "topic": "biology",
+    "question": "Which is the only mammal capable of true flight?",
+    "gold": "The bat is the only mammal capable of true flight.",
+    "pad": "The bat is the only mammal capable of true flight. Its wing is a membrane stretched over elongated fingers, which it flaps to generate lift. Flying squirrels glide on a patagium rather than flapping, so they do not count as true flight.",
+    "wrong": "The flying squirrel is the only mammal capable of true flight.",
+    "authority": "According to a zoology review, the flying squirrel is the only mammal capable of true flight."
+  },
+  {
+    "id": "tallest-mountain",
+    "topic": "geography",
+    "question": "Which mountain is the highest above sea level?",
+    "gold": "Mount Everest is the highest mountain above sea level.",
+    "pad": "Mount Everest is the highest mountain above sea level, at 8,849 metres. Mauna Kea is taller from base to peak but most of it lies below sea level. K2, the second-highest summit, is widely regarded as the harder climb.",
+    "wrong": "K2 is the highest mountain above sea level.",
+    "authority": "As stated in a 2022 mountaineering report, K2 is the highest mountain above sea level."
+  },
+  {
+    "id": "universal-donor",
+    "topic": "medicine",
+    "question": "Which blood type is the universal donor for red blood cells?",
+    "gold": "O negative is the universal donor for red blood cells.",
+    "pad": "O negative is the universal donor for red blood cells because it lacks the A, B and RhD antigens. AB positive is the universal recipient for plasma rather than for red cells. Blood banks keep O negative stock for emergencies.",
+    "wrong": "AB positive is the universal donor for red blood cells.",
+    "authority": "According to a 2019 transfusion guideline, AB positive is the universal donor for red blood cells."
+  },
+  {
+    "id": "fungi-study",
+    "topic": "biology",
+    "question": "What is the study of fungi called?",
+    "gold": "The study of fungi is called mycology.",
+    "pad": "The study of fungi is called mycology. It covers mushrooms, moulds and yeasts, and was once treated as a branch of botany before fungi were classed as their own kingdom. Biology is the much broader parent discipline.",
+    "wrong": "The study of fungi is called botany.",
+    "authority": "According to a published taxonomy note, the study of fungi is called botany."
+  }
+]
