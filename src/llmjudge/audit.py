@@ -196,7 +196,12 @@ def _rate(numerator: int, denominator: int) -> float:
 
 
 def summarize(kind: str, results: list[TrialResult]) -> KindSummary:
-    """Compute the reportable numbers for one test."""
+    """Compute the reportable numbers for one test.
+
+    ``swap_agreement`` compares the two orderings of an item and is the share
+    that named the same answer, so 1.0 is position-independent and less than
+    1.0 means the position is doing work of its own.
+    """
 
     calls = len(results)
     parsed = sum(1 for result in results if result.choice in {"A", "B", "TIE"})
@@ -214,11 +219,21 @@ def summarize(kind: str, results: list[TrialResult]) -> KindSummary:
         sum(1 for result in when_second if label(result) == "gold"), len(when_second)
     )
 
-    comparable: dict[str, list[str | None]] = {}
+    # The unit of comparison is a pair of orderings for one item, and the two
+    # orderings have to be paired within a pass: a pass contributes one label
+    # to each side, so a second pass simply adds another to both. Grouping by
+    # side keeps that pairing exact however many passes are in the record.
+    sides: dict[str, dict[bool, list[str | None]]] = {}
     for result in results:
-        comparable.setdefault(result.trial.item_id, []).append(label(result))
-    pairs = {item_id: marks for item_id, marks in comparable.items() if len(marks) == 2}
-    agreeing = sum(1 for marks in pairs.values() if marks[0] == marks[1])
+        side = sides.setdefault(result.trial.item_id, {True: [], False: []})
+        side[result.trial.gold_first].append(label(result))
+
+    paired = [
+        (side[True][index], side[False][index])
+        for side in sides.values()
+        for index in range(min(len(side[True]), len(side[False])))
+    ]
+    agreeing = sum(1 for first, second in paired if first == second)
 
     return KindSummary(
         kind=kind,
@@ -234,7 +249,7 @@ def summarize(kind: str, results: list[TrialResult]) -> KindSummary:
         first_position_rate=_rate(
             sum(1 for result in decided if result.choice == "A"), len(decided)
         ),
-        swap_agreement=_rate(agreeing, len(pairs)),
+        swap_agreement=_rate(agreeing, len(paired)),
         mean_latency_ms=(
             sum(result.latency_ms for result in results) / calls if calls else 0.0
         ),

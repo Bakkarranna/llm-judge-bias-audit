@@ -1,0 +1,3059 @@
+{
+  "model": "qwen2.5:1.5b",
+  "judge": "local-ollama",
+  "items": 24,
+  "calls_per_item": 2,
+  "total_calls": 288,
+  "kinds": {
+    "correctness": {
+      "kind": "correctness",
+      "calls": 96,
+      "parsed": 96,
+      "ties": 0,
+      "decided": 96,
+      "gold_choices": 66,
+      "gold_preference_rate": 0.6875,
+      "gold_preferred_when_first": 0.375,
+      "gold_preferred_when_second": 1.0,
+      "position_gap": -0.625,
+      "first_position_rate": 0.1875,
+      "swap_agreement": 0.375,
+      "mean_latency_ms": 2197.84,
+      "prompt_tokens": 9380,
+      "completion_tokens": 192
+    },
+    "verbosity": {
+      "kind": "verbosity",
+      "calls": 96,
+      "parsed": 96,
+      "ties": 0,
+      "decided": 96,
+      "gold_choices": 60,
+      "gold_preference_rate": 0.625,
+      "gold_preferred_when_first": 0.5,
+      "gold_preferred_when_second": 0.75,
+      "position_gap": -0.25,
+      "first_position_rate": 0.375,
+      "swap_agreement": 0.3333,
+      "mean_latency_ms": 3183.2,
+      "prompt_tokens": 12808,
+      "completion_tokens": 192
+    },
+    "authority": {
+      "kind": "authority",
+      "calls": 96,
+      "parsed": 96,
+      "ties": 0,
+      "decided": 96,
+      "gold_choices": 50,
+      "gold_preference_rate": 0.5208,
+      "gold_preferred_when_first": 0.0417,
+      "gold_preferred_when_second": 1.0,
+      "position_gap": -0.9583,
+      "first_position_rate": 0.0208,
+      "swap_agreement": 0.0417,
+      "mean_latency_ms": 2202.67,
+      "prompt_tokens": 10336,
+      "completion_tokens": 192
+    }
+  },
+  "per_pass": [
+    {
+      "correctness": {
+        "kind": "correctness",
+        "calls": 48,
+        "parsed": 48,
+        "ties": 0,
+        "decided": 48,
+        "gold_choices": 33,
+        "gold_preference_rate": 0.6875,
+        "gold_preferred_when_first": 0.375,
+        "gold_preferred_when_second": 1.0,
+        "position_gap": -0.625,
+        "first_position_rate": 0.1875,
+        "swap_agreement": 0.375,
+        "mean_latency_ms": 2446.39,
+        "prompt_tokens": 4690,
+        "completion_tokens": 96
+      },
+      "verbosity": {
+        "kind": "verbosity",
+        "calls": 48,
+        "parsed": 48,
+        "ties": 0,
+        "decided": 48,
+        "gold_choices": 30,
+        "gold_preference_rate": 0.625,
+        "gold_preferred_when_first": 0.5,
+        "gold_preferred_when_second": 0.75,
+        "position_gap": -0.25,
+        "first_position_rate": 0.375,
+        "swap_agreement": 0.3333,
+        "mean_latency_ms": 3325.06,
+        "prompt_tokens": 6404,
+        "completion_tokens": 96
+      },
+      "authority": {
+        "kind": "authority",
+        "calls": 48,
+        "parsed": 48,
+        "ties": 0,
+        "decided": 48,
+        "gold_choices": 25,
+        "gold_preference_rate": 0.5208,
+        "gold_preferred_when_first": 0.0417,
+        "gold_preferred_when_second": 1.0,
+        "position_gap": -0.9583,
+        "first_position_rate": 0.0208,
+        "swap_agreement": 0.0417,
+        "mean_latency_ms": 2224.94,
+        "prompt_tokens": 5168,
+        "completion_tokens": 96
+      }
+    },
+    {
+      "correctness": {
+        "kind": "correctness",
+        "calls": 48,
+        "parsed": 48,
+        "ties": 0,
+        "decided": 48,
+        "gold_choices": 33,
+        "gold_preference_rate": 0.6875,
+        "gold_preferred_when_first": 0.375,
+        "gold_preferred_when_second": 1.0,
+        "position_gap": -0.625,
+        "first_position_rate": 0.1875,
+        "swap_agreement": 0.375,
+        "mean_latency_ms": 1949.29,
+        "prompt_tokens": 4690,
+        "completion_tokens": 96
+      },
+      "verbosity": {
+        "kind": "verbosity",
+        "calls": 48,
+        "parsed": 48,
+        "ties": 0,
+        "decided": 48,
+        "gold_choices": 30,
+        "gold_preference_rate": 0.625,
+        "gold_preferred_when_first": 0.5,
+        "gold_preferred_when_second": 0.75,
+        "position_gap": -0.25,
+        "first_position_rate": 0.375,
+        "swap_agreement": 0.3333,
+        "mean_latency_ms": 3041.35,
+        "prompt_tokens": 6404,
+        "completion_tokens": 96
+      },
+      "authority": {
+        "kind": "authority",
+        "calls": 48,
+        "parsed": 48,
+        "ties": 0,
+        "decided": 48,
+        "gold_choices": 25,
+        "gold_preference_rate": 0.5208,
+        "gold_preferred_when_first": 0.0417,
+        "gold_preferred_when_second": 1.0,
+        "position_gap": -0.9583,
+        "first_position_rate": 0.0208,
+        "swap_agreement": 0.0417,
+        "mean_latency_ms": 2180.4,
+        "prompt_tokens": 5168,
+        "completion_tokens": 96
+      }
+    }
+  ],
+  "repeatability": {
+    "pass1_vs_pass2": {
+      "overall": 1.0,
+      "correctness": 1.0,
+      "verbosity": 1.0,
+      "authority": 1.0
+    }
+  },
+  "calls": [
+    {
+      "kind": "correctness",
+      "item": "capital-australia",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 12850.72,
+      "prompt_tokens": 97,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "capital-australia",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1946.07,
+      "prompt_tokens": 97,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "leap-days",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2702.66,
+      "prompt_tokens": 107,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "leap-days",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2102.12,
+      "prompt_tokens": 107,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "closest-planet",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2466.07,
+      "prompt_tokens": 100,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "closest-planet",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1905.7,
+      "prompt_tokens": 100,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "symbol-gold",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2415.07,
+      "prompt_tokens": 94,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "symbol-gold",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1639.01,
+      "prompt_tokens": 94,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "largest-ocean",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2647.72,
+      "prompt_tokens": 98,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "largest-ocean",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2161.23,
+      "prompt_tokens": 98,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "atmosphere-gas",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2866.83,
+      "prompt_tokens": 107,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "atmosphere-gas",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2260.7,
+      "prompt_tokens": 107,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "smallest-prime",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2334.37,
+      "prompt_tokens": 93,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "smallest-prime",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1563.33,
+      "prompt_tokens": 93,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "capital-canada",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2153.58,
+      "prompt_tokens": 91,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "capital-canada",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1892.24,
+      "prompt_tokens": 91,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "largest-planet",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2428.18,
+      "prompt_tokens": 100,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "largest-planet",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2186.46,
+      "prompt_tokens": 100,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "capital-switzerland",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2251.26,
+      "prompt_tokens": 91,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "capital-switzerland",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1598.03,
+      "prompt_tokens": 91,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "mandarin-speakers",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2669.35,
+      "prompt_tokens": 102,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "mandarin-speakers",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2144.36,
+      "prompt_tokens": 102,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "dna-expansion",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2290.54,
+      "prompt_tokens": 96,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "dna-expansion",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1868.44,
+      "prompt_tokens": 96,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "continent-count",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2461.82,
+      "prompt_tokens": 92,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "continent-count",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1953.72,
+      "prompt_tokens": 92,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "hardest-substance",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2358.69,
+      "prompt_tokens": 94,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "hardest-substance",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1918.73,
+      "prompt_tokens": 94,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "currency-japan",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2526.47,
+      "prompt_tokens": 93,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "currency-japan",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1731.27,
+      "prompt_tokens": 93,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "romeo-author",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2219.36,
+      "prompt_tokens": 90,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "romeo-author",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1897.68,
+      "prompt_tokens": 90,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "water-boils",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2948.68,
+      "prompt_tokens": 110,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "water-boils",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1972.12,
+      "prompt_tokens": 110,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "heart-pumps",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2385.03,
+      "prompt_tokens": 94,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "heart-pumps",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2029.03,
+      "prompt_tokens": 94,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "si-force",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2485.28,
+      "prompt_tokens": 98,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "si-force",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1746.56,
+      "prompt_tokens": 98,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "http-expansion",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2254.91,
+      "prompt_tokens": 92,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "http-expansion",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1833.92,
+      "prompt_tokens": 92,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "flying-mammal",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2768.36,
+      "prompt_tokens": 106,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "flying-mammal",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2356.86,
+      "prompt_tokens": 106,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "tallest-mountain",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2729.55,
+      "prompt_tokens": 99,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "tallest-mountain",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1965.3,
+      "prompt_tokens": 99,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "universal-donor",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2748.28,
+      "prompt_tokens": 104,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "universal-donor",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2183.61,
+      "prompt_tokens": 104,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "fungi-study",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2688.66,
+      "prompt_tokens": 97,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "fungi-study",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1918.81,
+      "prompt_tokens": 97,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "capital-australia",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 4052.51,
+      "prompt_tokens": 141,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "capital-australia",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3766.33,
+      "prompt_tokens": 141,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "leap-days",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3812.04,
+      "prompt_tokens": 149,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "leap-days",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3818.54,
+      "prompt_tokens": 149,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "closest-planet",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3619.44,
+      "prompt_tokens": 133,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "closest-planet",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3071.87,
+      "prompt_tokens": 133,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "symbol-gold",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3476.91,
+      "prompt_tokens": 125,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "symbol-gold",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3162.65,
+      "prompt_tokens": 125,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "largest-ocean",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3612.01,
+      "prompt_tokens": 130,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "largest-ocean",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3179.35,
+      "prompt_tokens": 130,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "atmosphere-gas",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3931.12,
+      "prompt_tokens": 138,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "atmosphere-gas",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2899.68,
+      "prompt_tokens": 138,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "smallest-prime",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3661.03,
+      "prompt_tokens": 128,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "smallest-prime",
+      "gold_first": false,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3011.94,
+      "prompt_tokens": 128,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "capital-canada",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3265.78,
+      "prompt_tokens": 122,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "capital-canada",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2831.93,
+      "prompt_tokens": 122,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "largest-planet",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3939.62,
+      "prompt_tokens": 137,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "largest-planet",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3127.68,
+      "prompt_tokens": 137,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "capital-switzerland",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3579.25,
+      "prompt_tokens": 128,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "capital-switzerland",
+      "gold_first": false,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3270.23,
+      "prompt_tokens": 128,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "mandarin-speakers",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3846.88,
+      "prompt_tokens": 134,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "mandarin-speakers",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2985.59,
+      "prompt_tokens": 134,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "dna-expansion",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3910.72,
+      "prompt_tokens": 134,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "dna-expansion",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3016.98,
+      "prompt_tokens": 134,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "continent-count",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3846.29,
+      "prompt_tokens": 133,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "continent-count",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2903.77,
+      "prompt_tokens": 133,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "hardest-substance",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3526.37,
+      "prompt_tokens": 129,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "hardest-substance",
+      "gold_first": false,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3094.09,
+      "prompt_tokens": 129,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "currency-japan",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3677.19,
+      "prompt_tokens": 132,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "currency-japan",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3105.26,
+      "prompt_tokens": 132,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "romeo-author",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3827.87,
+      "prompt_tokens": 125,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "romeo-author",
+      "gold_first": false,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3170.86,
+      "prompt_tokens": 125,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "water-boils",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3152.79,
+      "prompt_tokens": 136,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "water-boils",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2595.0,
+      "prompt_tokens": 136,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "heart-pumps",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3341.03,
+      "prompt_tokens": 125,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "heart-pumps",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2517.65,
+      "prompt_tokens": 125,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "si-force",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3482.2,
+      "prompt_tokens": 133,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "si-force",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2665.01,
+      "prompt_tokens": 133,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "http-expansion",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2927.72,
+      "prompt_tokens": 124,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "http-expansion",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2739.87,
+      "prompt_tokens": 124,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "flying-mammal",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3807.9,
+      "prompt_tokens": 147,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "flying-mammal",
+      "gold_first": false,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3074.8,
+      "prompt_tokens": 147,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "tallest-mountain",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3748.03,
+      "prompt_tokens": 144,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "tallest-mountain",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3100.17,
+      "prompt_tokens": 144,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "universal-donor",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3545.3,
+      "prompt_tokens": 139,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "universal-donor",
+      "gold_first": false,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2687.36,
+      "prompt_tokens": 139,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "fungi-study",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3394.12,
+      "prompt_tokens": 136,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "fungi-study",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2822.28,
+      "prompt_tokens": 136,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "capital-australia",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2396.63,
+      "prompt_tokens": 110,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "capital-australia",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2187.18,
+      "prompt_tokens": 110,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "leap-days",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1849.27,
+      "prompt_tokens": 115,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "leap-days",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2248.91,
+      "prompt_tokens": 115,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "closest-planet",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2765.62,
+      "prompt_tokens": 113,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "closest-planet",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2247.1,
+      "prompt_tokens": 113,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "symbol-gold",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2524.12,
+      "prompt_tokens": 106,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "symbol-gold",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2232.35,
+      "prompt_tokens": 106,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "largest-ocean",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2532.33,
+      "prompt_tokens": 106,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "largest-ocean",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2287.95,
+      "prompt_tokens": 106,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "atmosphere-gas",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2081.04,
+      "prompt_tokens": 119,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "atmosphere-gas",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2641.4,
+      "prompt_tokens": 119,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "smallest-prime",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2371.41,
+      "prompt_tokens": 106,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "smallest-prime",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2169.3,
+      "prompt_tokens": 106,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "capital-canada",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2350.2,
+      "prompt_tokens": 102,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "capital-canada",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2176.32,
+      "prompt_tokens": 102,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "largest-planet",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2447.03,
+      "prompt_tokens": 108,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "largest-planet",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2406.94,
+      "prompt_tokens": 108,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "capital-switzerland",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2387.69,
+      "prompt_tokens": 104,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "capital-switzerland",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2201.16,
+      "prompt_tokens": 104,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "mandarin-speakers",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2037.08,
+      "prompt_tokens": 114,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "mandarin-speakers",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2090.3,
+      "prompt_tokens": 114,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "dna-expansion",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2265.38,
+      "prompt_tokens": 102,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "dna-expansion",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1961.64,
+      "prompt_tokens": 102,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "continent-count",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2375.66,
+      "prompt_tokens": 104,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "continent-count",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2042.54,
+      "prompt_tokens": 104,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "hardest-substance",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2297.02,
+      "prompt_tokens": 101,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "hardest-substance",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2009.21,
+      "prompt_tokens": 101,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "currency-japan",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2606.67,
+      "prompt_tokens": 103,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "currency-japan",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2096.25,
+      "prompt_tokens": 103,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "romeo-author",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1637.42,
+      "prompt_tokens": 97,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "romeo-author",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1903.87,
+      "prompt_tokens": 97,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "water-boils",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3237.77,
+      "prompt_tokens": 120,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "water-boils",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2303.65,
+      "prompt_tokens": 120,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "heart-pumps",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1661.25,
+      "prompt_tokens": 100,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "heart-pumps",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1977.86,
+      "prompt_tokens": 100,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "si-force",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2639.4,
+      "prompt_tokens": 109,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "si-force",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2223.0,
+      "prompt_tokens": 109,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "http-expansion",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1696.71,
+      "prompt_tokens": 99,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "http-expansion",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2025.23,
+      "prompt_tokens": 99,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "flying-mammal",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2736.05,
+      "prompt_tokens": 113,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "flying-mammal",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2371.14,
+      "prompt_tokens": 113,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "tallest-mountain",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1992.59,
+      "prompt_tokens": 113,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "tallest-mountain",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2223.61,
+      "prompt_tokens": 113,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "universal-donor",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2091.15,
+      "prompt_tokens": 116,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "universal-donor",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2237.09,
+      "prompt_tokens": 116,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "fungi-study",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1565.28,
+      "prompt_tokens": 104,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "fungi-study",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1988.43,
+      "prompt_tokens": 104,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "capital-australia",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2087.94,
+      "prompt_tokens": 97,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "capital-australia",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1693.07,
+      "prompt_tokens": 97,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "leap-days",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2465.81,
+      "prompt_tokens": 107,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "leap-days",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1955.39,
+      "prompt_tokens": 107,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "closest-planet",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 1799.5,
+      "prompt_tokens": 100,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "closest-planet",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1719.06,
+      "prompt_tokens": 100,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "symbol-gold",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2403.35,
+      "prompt_tokens": 94,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "symbol-gold",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1506.23,
+      "prompt_tokens": 94,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "largest-ocean",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2099.93,
+      "prompt_tokens": 98,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "largest-ocean",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1904.89,
+      "prompt_tokens": 98,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "atmosphere-gas",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2494.49,
+      "prompt_tokens": 107,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "atmosphere-gas",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2195.92,
+      "prompt_tokens": 107,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "smallest-prime",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 1981.56,
+      "prompt_tokens": 93,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "smallest-prime",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1470.95,
+      "prompt_tokens": 93,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "capital-canada",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1831.1,
+      "prompt_tokens": 91,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "capital-canada",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1381.61,
+      "prompt_tokens": 91,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "largest-planet",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2270.09,
+      "prompt_tokens": 100,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "largest-planet",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1825.16,
+      "prompt_tokens": 100,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "capital-switzerland",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1961.49,
+      "prompt_tokens": 91,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "capital-switzerland",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1373.1,
+      "prompt_tokens": 91,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "mandarin-speakers",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2425.82,
+      "prompt_tokens": 102,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "mandarin-speakers",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2055.23,
+      "prompt_tokens": 102,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "dna-expansion",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2081.69,
+      "prompt_tokens": 96,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "dna-expansion",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1562.82,
+      "prompt_tokens": 96,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "continent-count",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2126.91,
+      "prompt_tokens": 92,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "continent-count",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1569.49,
+      "prompt_tokens": 92,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "hardest-substance",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2627.93,
+      "prompt_tokens": 94,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "hardest-substance",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1734.77,
+      "prompt_tokens": 94,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "currency-japan",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2077.19,
+      "prompt_tokens": 93,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "currency-japan",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1461.92,
+      "prompt_tokens": 93,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "romeo-author",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2053.28,
+      "prompt_tokens": 90,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "romeo-author",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1598.85,
+      "prompt_tokens": 90,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "water-boils",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2601.28,
+      "prompt_tokens": 110,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "water-boils",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1810.89,
+      "prompt_tokens": 110,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "heart-pumps",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1945.05,
+      "prompt_tokens": 94,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "heart-pumps",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1744.71,
+      "prompt_tokens": 94,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "si-force",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2294.63,
+      "prompt_tokens": 98,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "si-force",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1664.95,
+      "prompt_tokens": 98,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "http-expansion",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 1952.91,
+      "prompt_tokens": 92,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "http-expansion",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1495.48,
+      "prompt_tokens": 92,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "flying-mammal",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2494.48,
+      "prompt_tokens": 106,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "flying-mammal",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2085.14,
+      "prompt_tokens": 106,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "tallest-mountain",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1848.22,
+      "prompt_tokens": 99,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "tallest-mountain",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1933.45,
+      "prompt_tokens": 99,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "universal-donor",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2289.05,
+      "prompt_tokens": 104,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "universal-donor",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1898.29,
+      "prompt_tokens": 104,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "fungi-study",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2024.47,
+      "prompt_tokens": 97,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "correctness",
+      "item": "fungi-study",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1686.22,
+      "prompt_tokens": 97,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "capital-australia",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3455.07,
+      "prompt_tokens": 141,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "capital-australia",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3087.57,
+      "prompt_tokens": 141,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "leap-days",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3211.33,
+      "prompt_tokens": 149,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "leap-days",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3269.49,
+      "prompt_tokens": 149,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "closest-planet",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3429.73,
+      "prompt_tokens": 133,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "closest-planet",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2771.62,
+      "prompt_tokens": 133,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "symbol-gold",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3196.75,
+      "prompt_tokens": 125,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "symbol-gold",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2478.25,
+      "prompt_tokens": 125,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "largest-ocean",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3366.57,
+      "prompt_tokens": 130,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "largest-ocean",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2857.79,
+      "prompt_tokens": 130,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "atmosphere-gas",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3392.89,
+      "prompt_tokens": 138,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "atmosphere-gas",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2681.51,
+      "prompt_tokens": 138,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "smallest-prime",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3320.16,
+      "prompt_tokens": 128,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "smallest-prime",
+      "gold_first": false,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2635.31,
+      "prompt_tokens": 128,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "capital-canada",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3101.48,
+      "prompt_tokens": 122,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "capital-canada",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2595.88,
+      "prompt_tokens": 122,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "largest-planet",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3421.51,
+      "prompt_tokens": 137,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "largest-planet",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2884.31,
+      "prompt_tokens": 137,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "capital-switzerland",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3086.45,
+      "prompt_tokens": 128,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "capital-switzerland",
+      "gold_first": false,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2648.12,
+      "prompt_tokens": 128,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "mandarin-speakers",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3088.68,
+      "prompt_tokens": 134,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "mandarin-speakers",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2649.32,
+      "prompt_tokens": 134,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "dna-expansion",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3343.12,
+      "prompt_tokens": 134,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "dna-expansion",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2815.73,
+      "prompt_tokens": 134,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "continent-count",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2654.45,
+      "prompt_tokens": 133,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "continent-count",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2590.36,
+      "prompt_tokens": 133,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "hardest-substance",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3293.83,
+      "prompt_tokens": 129,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "hardest-substance",
+      "gold_first": false,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2801.6,
+      "prompt_tokens": 129,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "currency-japan",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3513.51,
+      "prompt_tokens": 132,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "currency-japan",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2743.03,
+      "prompt_tokens": 132,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "romeo-author",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3426.0,
+      "prompt_tokens": 125,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "romeo-author",
+      "gold_first": false,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2777.27,
+      "prompt_tokens": 125,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "water-boils",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2584.71,
+      "prompt_tokens": 136,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "water-boils",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2699.84,
+      "prompt_tokens": 136,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "heart-pumps",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3219.77,
+      "prompt_tokens": 125,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "heart-pumps",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2755.85,
+      "prompt_tokens": 125,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "si-force",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3389.12,
+      "prompt_tokens": 133,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "si-force",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2877.52,
+      "prompt_tokens": 133,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "http-expansion",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3124.22,
+      "prompt_tokens": 124,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "http-expansion",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2466.14,
+      "prompt_tokens": 124,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "flying-mammal",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3813.41,
+      "prompt_tokens": 147,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "flying-mammal",
+      "gold_first": false,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3087.67,
+      "prompt_tokens": 147,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "tallest-mountain",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3722.61,
+      "prompt_tokens": 144,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "tallest-mountain",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3088.9,
+      "prompt_tokens": 144,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "universal-donor",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3541.15,
+      "prompt_tokens": 139,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "universal-donor",
+      "gold_first": false,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2849.45,
+      "prompt_tokens": 139,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "fungi-study",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 3547.86,
+      "prompt_tokens": 136,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "verbosity",
+      "item": "fungi-study",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2627.74,
+      "prompt_tokens": 136,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "capital-australia",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2465.85,
+      "prompt_tokens": 110,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "capital-australia",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2141.22,
+      "prompt_tokens": 110,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "leap-days",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2164.93,
+      "prompt_tokens": 115,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "leap-days",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2237.7,
+      "prompt_tokens": 115,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "closest-planet",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2044.61,
+      "prompt_tokens": 113,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "closest-planet",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2190.96,
+      "prompt_tokens": 113,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "symbol-gold",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2407.45,
+      "prompt_tokens": 106,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "symbol-gold",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2286.35,
+      "prompt_tokens": 106,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "largest-ocean",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1842.74,
+      "prompt_tokens": 106,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "largest-ocean",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2142.58,
+      "prompt_tokens": 106,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "atmosphere-gas",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2129.18,
+      "prompt_tokens": 119,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "atmosphere-gas",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2546.85,
+      "prompt_tokens": 119,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "smallest-prime",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2480.24,
+      "prompt_tokens": 106,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "smallest-prime",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2146.46,
+      "prompt_tokens": 106,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "capital-canada",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2259.7,
+      "prompt_tokens": 102,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "capital-canada",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1888.23,
+      "prompt_tokens": 102,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "largest-planet",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2502.23,
+      "prompt_tokens": 108,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "largest-planet",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2176.35,
+      "prompt_tokens": 108,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "capital-switzerland",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2306.2,
+      "prompt_tokens": 104,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "capital-switzerland",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2030.21,
+      "prompt_tokens": 104,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "mandarin-speakers",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2162.45,
+      "prompt_tokens": 114,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "mandarin-speakers",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2230.83,
+      "prompt_tokens": 114,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "dna-expansion",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2328.0,
+      "prompt_tokens": 102,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "dna-expansion",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2124.5,
+      "prompt_tokens": 102,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "continent-count",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2331.63,
+      "prompt_tokens": 104,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "continent-count",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2000.96,
+      "prompt_tokens": 104,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "hardest-substance",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1784.1,
+      "prompt_tokens": 101,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "hardest-substance",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2129.04,
+      "prompt_tokens": 101,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "currency-japan",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2476.56,
+      "prompt_tokens": 103,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "currency-japan",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2084.22,
+      "prompt_tokens": 103,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "romeo-author",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1747.03,
+      "prompt_tokens": 97,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "romeo-author",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1877.97,
+      "prompt_tokens": 97,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "water-boils",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 3136.43,
+      "prompt_tokens": 120,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "water-boils",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2403.86,
+      "prompt_tokens": 120,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "heart-pumps",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1656.66,
+      "prompt_tokens": 100,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "heart-pumps",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1959.93,
+      "prompt_tokens": 100,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "si-force",
+      "gold_first": true,
+      "choice": "A",
+      "reply": "A",
+      "latency_ms": 2664.43,
+      "prompt_tokens": 109,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "si-force",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2312.36,
+      "prompt_tokens": 109,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "http-expansion",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1846.17,
+      "prompt_tokens": 99,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "http-expansion",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1852.13,
+      "prompt_tokens": 99,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "flying-mammal",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2794.2,
+      "prompt_tokens": 113,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "flying-mammal",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2202.33,
+      "prompt_tokens": 113,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "tallest-mountain",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2065.61,
+      "prompt_tokens": 113,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "tallest-mountain",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2172.29,
+      "prompt_tokens": 113,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "universal-donor",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1890.95,
+      "prompt_tokens": 116,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "universal-donor",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2269.54,
+      "prompt_tokens": 116,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "fungi-study",
+      "gold_first": true,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 1713.84,
+      "prompt_tokens": 104,
+      "completion_tokens": 2
+    },
+    {
+      "kind": "authority",
+      "item": "fungi-study",
+      "gold_first": false,
+      "choice": "B",
+      "reply": "B",
+      "latency_ms": 2051.1,
+      "prompt_tokens": 104,
+      "completion_tokens": 2
+    }
+  ],
+  "notes": "24 items, 144 comparisons per pass, 2 passes, temperature 0 and seed 42, 821 s of wall clock. The judge is asked for exactly one word, A or B; any other reply is counted as unparsed rather than guessed at."
+}
