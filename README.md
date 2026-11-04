@@ -88,7 +88,6 @@ swap agreement was 4.2%, meaning both orderings agreed on 1 of 24 items. The gap
 of -95.8% is close to the most the protocol can measure. A citation-shaped
 prefix moved the verdict far more than padding did, since verbosity left the
 correct answer above 60% and the prefix dropped it to a coin flip.
-END_A
 
 ## Position effect
 
@@ -122,7 +121,6 @@ prompt token count, 12808 against 9380 for correctness and 10336 for authority,
 which is the padded answer lengthening the prompt. Every call completed within
 192 completion tokens, since a verdict is one letter. No call returned a tie and
 no reply failed to parse.
-END_B
 
 ## How the audit works
 
@@ -146,7 +144,6 @@ END_B
 Swap agreement pairs the two orderings of the same item within the same kind and
 counts how often they named the same answer. It works over any number of passes
 rather than assuming two results per item.
-END_C
 
 ## Layout
 
