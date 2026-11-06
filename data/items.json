@@ -214,5 +214,689 @@
     "pad": "The study of fungi is called mycology. It covers mushrooms, moulds and yeasts, and was once treated as a branch of botany before fungi were classed as their own kingdom. Biology is the much broader parent discipline.",
     "wrong": "The study of fungi is called botany.",
     "authority": "According to a published taxonomy note, the study of fungi is called botany."
+  },
+  {
+    "id": "capital-brazil",
+    "topic": "geography",
+    "question": "What is the capital of Brazil?",
+    "gold": "The capital of Brazil is Brasilia.",
+    "pad": "The capital of Brazil is Brasilia. It was built inland and inaugurated in 1960 to move the seat of government away from Rio de Janeiro. The city was planned by Lucio Costa with buildings by Oscar Niemeyer.",
+    "wrong": "The capital of Brazil is Rio de Janeiro.",
+    "authority": "According to a 2018 government handbook, the capital of Brazil is Rio de Janeiro."
+  },
+  {
+    "id": "longest-river",
+    "topic": "geography",
+    "question": "Which river is the longest in the world?",
+    "gold": "The Nile is generally listed as the longest river in the world.",
+    "pad": "The Nile is generally listed as the longest river in the world. It runs about 6,650 kilometres through eleven countries before emptying into the Mediterranean. Some measurements of the Amazon put that river within a few hundred kilometres of it.",
+    "wrong": "The Amazon is by far the longest river in the world.",
+    "authority": "Per a 2021 hydrological survey, the Amazon is by far the longest river in the world."
+  },
+  {
+    "id": "largest-desert",
+    "topic": "geography",
+    "question": "Which is the largest hot desert on Earth?",
+    "gold": "The Sahara is the largest hot desert on Earth.",
+    "pad": "The Sahara is the largest hot desert on Earth. It spans most of North Africa and covers about 9.2 million square kilometres. The larger Antarctic desert is a cold desert rather than a hot one.",
+    "wrong": "The Gobi is the largest hot desert on Earth.",
+    "authority": "As a 2016 climatology textbook puts it, the Gobi is the largest hot desert on Earth."
+  },
+  {
+    "id": "smallest-country",
+    "topic": "geography",
+    "question": "What is the smallest country in the world by area?",
+    "gold": "Vatican City is the smallest country in the world by area.",
+    "pad": "Vatican City is the smallest country in the world by area. It covers about 0.44 square kilometres within Rome. Monaco and San Marino, the other small European city states, are both larger.",
+    "wrong": "Monaco is the smallest country in the world by area.",
+    "authority": "According to a 2020 world atlas, Monaco is the smallest country in the world by area."
+  },
+  {
+    "id": "highest-waterfall",
+    "topic": "geography",
+    "question": "Which is the tallest uninterrupted waterfall in the world?",
+    "gold": "Angel Falls in Venezuela is the tallest uninterrupted waterfall in the world.",
+    "pad": "Angel Falls in Venezuela is the tallest uninterrupted waterfall in the world. Its single drop of about 807 metres falls from the Auyan-tepui table mountain. Measured by total height, South Africa's Tugela Falls is a close second.",
+    "wrong": "Niagara Falls is the tallest uninterrupted waterfall in the world.",
+    "authority": "As stated in a 2019 travel review, Niagara Falls is the tallest uninterrupted waterfall in the world."
+  },
+  {
+    "id": "capital-egypt",
+    "topic": "geography",
+    "question": "What is the capital of Egypt?",
+    "gold": "The capital of Egypt is Cairo.",
+    "pad": "The capital of Egypt is Cairo. It sits on the Nile near the delta and is the largest city in the Arab world. Alexandria, the country's second city, lies on the Mediterranean coast.",
+    "wrong": "The capital of Egypt is Alexandria.",
+    "authority": "Per a 2022 civics primer, the capital of Egypt is Alexandria."
+  },
+  {
+    "id": "sea-caspian",
+    "topic": "geography",
+    "question": "Is the Caspian Sea a lake or a sea?",
+    "gold": "The Caspian Sea is the world's largest inland body of water.",
+    "pad": "The Caspian Sea is the world's largest inland body of water. It is landlocked, so in law and geography it is treated as a lake. Its surface still lies about 28 metres below sea level.",
+    "wrong": "The Caspian Sea is a branch of the Indian Ocean.",
+    "authority": "According to an oceanography handbook, the Caspian Sea is a branch of the Indian Ocean."
+  },
+  {
+    "id": "highest-capital",
+    "topic": "geography",
+    "question": "Which national capital sits at the highest altitude?",
+    "gold": "La Paz in Bolivia sits at the highest altitude of any national capital.",
+    "pad": "La Paz in Bolivia sits at the highest altitude of any national capital. It rests at about 3,640 metres in a canyon on the Altiplano. Sucre is Bolivia's constitutional capital and lies lower.",
+    "wrong": "Kathmandu is the highest national capital in the world.",
+    "authority": "As reported in a 2021 geography journal, Kathmandu is the highest national capital in the world."
+  },
+  {
+    "id": "capital-south-africa",
+    "topic": "geography",
+    "question": "What is the administrative capital of South Africa?",
+    "gold": "Pretoria is the administrative capital of South Africa.",
+    "pad": "Pretoria is the administrative capital of South Africa. The country has three capitals, with Cape Town for the legislature and Bloemfontein for the judiciary. Pretoria holds the executive branch.",
+    "wrong": "Johannesburg is the administrative capital of South Africa.",
+    "authority": "According to a 2017 civics reference, Johannesburg is the administrative capital of South Africa."
+  },
+  {
+    "id": "island-largest",
+    "topic": "geography",
+    "question": "Which is the largest island in the world?",
+    "gold": "Greenland is the largest island in the world.",
+    "pad": "Greenland is the largest island in the world. It covers about 2.16 million square kilometres and is largely ice sheet. Australia, which is larger, is counted as a continent rather than an island.",
+    "wrong": "Antarctica is the largest island in the world.",
+    "authority": "Per a 2019 atlas, Antarctica is the largest island in the world."
+  },
+  {
+    "id": "prime-count-hundred",
+    "topic": "arithmetic",
+    "question": "How many prime numbers are there below 100?",
+    "gold": "There are 25 prime numbers below 100.",
+    "pad": "There are 25 prime numbers below 100. The largest of them is 97, and 1 is not counted as prime. Between 2 and 10 the primes are 2, 3, 5 and 7.",
+    "wrong": "There are 21 prime numbers below 100.",
+    "authority": "According to a 2018 number theory note, there are 21 prime numbers below 100."
+  },
+  {
+    "id": "minutes-day",
+    "topic": "arithmetic",
+    "question": "How many minutes are there in a day?",
+    "gold": "There are 1440 minutes in a day.",
+    "pad": "There are 1440 minutes in a day. A day holds 24 hours and an hour holds 60 minutes. A week therefore holds 10,080 minutes.",
+    "wrong": "There are 1200 minutes in a day.",
+    "authority": "As a 2020 arithmetic quiz states, there are 1200 minutes in a day."
+  },
+  {
+    "id": "square-root-144",
+    "topic": "arithmetic",
+    "question": "What is the square root of 144?",
+    "gold": "The square root of 144 is 12.",
+    "pad": "The square root of 144 is 12, because 12 times 12 is 144. The cube root of 144 is not a whole number. A square of side 12 has an area of 144.",
+    "wrong": "The square root of 144 is 14.",
+    "authority": "Per a 2015 mathematics reference, the square root of 144 is 14."
+  },
+  {
+    "id": "percent-fraction",
+    "topic": "arithmetic",
+    "question": "What fraction is 25 percent?",
+    "gold": "25 percent is the fraction one quarter.",
+    "pad": "25 percent is the fraction one quarter. It equals 0.25 as a decimal and 1/4 exactly. Half of 25 percent is 12.5 percent.",
+    "wrong": "25 percent is the fraction one fifth.",
+    "authority": "According to a 2022 numeracy guide, 25 percent is the fraction one fifth."
+  },
+  {
+    "id": "powers-two",
+    "topic": "arithmetic",
+    "question": "What is 2 to the power of 10?",
+    "gold": "2 to the power of 10 is 1024.",
+    "pad": "2 to the power of 10 is 1024, which is the number of bytes in a kibibyte. Doubling it once more gives 2048. 2 to the power of 8 is 256.",
+    "wrong": "2 to the power of 10 is 1000.",
+    "authority": "As stated in a 2019 computing primer, 2 to the power of 10 is 1000."
+  },
+  {
+    "id": "sum-first-hundred",
+    "topic": "arithmetic",
+    "question": "What is the sum of the integers from 1 to 100?",
+    "gold": "The sum from 1 to 100 is 5050.",
+    "pad": "The sum from 1 to 100 is 5050. It follows from pairing 1 with 100, 2 with 99 and so on, giving 50 pairs of 101. The sum from 1 to 10 is 55.",
+    "wrong": "The sum from 1 to 100 is 5000.",
+    "authority": "Per a 2021 arithmetic text, the sum from 1 to 100 is 5000."
+  },
+  {
+    "id": "grams-kilogram",
+    "topic": "arithmetic",
+    "question": "How many grams are in a kilogram?",
+    "gold": "There are 1000 grams in a kilogram.",
+    "pad": "There are 1000 grams in a kilogram, which is the SI base unit of mass. A milligram is a thousandth of a gram. A metric tonne is a thousand kilograms.",
+    "wrong": "There are 100 grams in a kilogram.",
+    "authority": "According to a 2018 measurement guide, there are 100 grams in a kilogram."
+  },
+  {
+    "id": "largest-prime-below-50",
+    "topic": "arithmetic",
+    "question": "What is the largest prime number below 50?",
+    "gold": "The largest prime number below 50 is 47.",
+    "pad": "The largest prime number below 50 is 47. It has no divisors besides 1 and itself, while 49 is 7 times 7. The next prime after 47 is 53.",
+    "wrong": "The largest prime number below 50 is 49.",
+    "authority": "As a 2020 mathematics note puts it, the largest prime number below 50 is 49."
+  },
+  {
+    "id": "right-angle-degrees",
+    "topic": "arithmetic",
+    "question": "How many degrees are in a right angle?",
+    "gold": "A right angle is 90 degrees.",
+    "pad": "A right angle is 90 degrees. The angles of a triangle add up to 180 degrees, and a straight angle is 180. A full turn is 360 degrees.",
+    "wrong": "A right angle is 45 degrees.",
+    "authority": "Per a 2017 geometry primer, a right angle is 45 degrees."
+  },
+  {
+    "id": "hottest-planet",
+    "topic": "astronomy",
+    "question": "Which planet in the solar system is the hottest?",
+    "gold": "Venus is the hottest planet in the solar system.",
+    "pad": "Venus is the hottest planet in the solar system. Its thick carbon dioxide atmosphere traps heat and holds the surface near 465 degrees Celsius. Mercury is closer to the Sun but has almost no atmosphere to retain the heat.",
+    "wrong": "Mercury is the hottest planet in the solar system.",
+    "authority": "According to a 2020 astronomy review, Mercury is the hottest planet in the solar system."
+  },
+  {
+    "id": "red-planet",
+    "topic": "astronomy",
+    "question": "Which planet is known as the red planet?",
+    "gold": "Mars is known as the red planet.",
+    "pad": "Mars is known as the red planet. Iron oxide dust across its surface gives it the colour. It has two small moons, Phobos and Deimos.",
+    "wrong": "Jupiter is known as the red planet.",
+    "authority": "Per a 2019 planetarium guide, Jupiter is known as the red planet."
+  },
+  {
+    "id": "ringed-planet",
+    "topic": "astronomy",
+    "question": "Which planet is famous for its prominent ring system?",
+    "gold": "Saturn is famous for its prominent ring system.",
+    "pad": "Saturn is famous for its prominent ring system. The rings are mostly water ice in countless narrow ringlets. Uranus, Neptune and Jupiter also have rings, but far fainter ones.",
+    "wrong": "Neptune is famous for its prominent ring system.",
+    "authority": "As a 2018 astronomy textbook puts it, Neptune is famous for its prominent ring system."
+  },
+  {
+    "id": "moons-mars",
+    "topic": "astronomy",
+    "question": "How many moons does Mars have?",
+    "gold": "Mars has two moons, Phobos and Deimos.",
+    "pad": "Mars has two moons, Phobos and Deimos. Both are small, irregular bodies a few kilometres across. Earth has one moon.",
+    "wrong": "Mars has no moons at all.",
+    "authority": "According to a 2021 space almanac, Mars has no moons at all."
+  },
+  {
+    "id": "first-human-space",
+    "topic": "astronomy",
+    "question": "Who was the first human to travel into space?",
+    "gold": "Yuri Gagarin was the first human to travel into space.",
+    "pad": "Yuri Gagarin was the first human to travel into space, aboard Vostok 1 in April 1961. His flight lasted 108 minutes and completed one orbit of the Earth. Alan Shepard flew later that year.",
+    "wrong": "Neil Armstrong was the first human to travel into space.",
+    "authority": "As reported in a 2017 history of flight, Neil Armstrong was the first human to travel into space."
+  },
+  {
+    "id": "light-year-unit",
+    "topic": "astronomy",
+    "question": "What does a light year measure?",
+    "gold": "A light year measures the distance light travels in a year.",
+    "pad": "A light year measures the distance light travels in a year, about 9.46 trillion kilometres. The nearest star system, Alpha Centauri, lies about 4.4 light years away. A parsec is about 3.26 light years.",
+    "wrong": "A light year measures the time light takes to cross the galaxy.",
+    "authority": "According to a 2020 astronomy primer, a light year measures the time light takes to cross the galaxy."
+  },
+  {
+    "id": "moon-landing",
+    "topic": "astronomy",
+    "question": "In which year did humans first land on the Moon?",
+    "gold": "Humans first landed on the Moon in 1969.",
+    "pad": "Humans first landed on the Moon in 1969, during the Apollo 11 mission. Neil Armstrong and Buzz Aldrin walked on the surface while Michael Collins stayed in orbit. The last crewed landing was Apollo 17 in 1972.",
+    "wrong": "Humans first landed on the Moon in 1957.",
+    "authority": "Per a 2019 spaceflight chronology, humans first landed on the Moon in 1957."
+  },
+  {
+    "id": "sun-star",
+    "topic": "astronomy",
+    "question": "What is the Sun?",
+    "gold": "The Sun is a star.",
+    "pad": "The Sun is a star, a ball of plasma that fuses hydrogen into helium at its core. Its light takes about eight minutes to reach the Earth. It holds the vast majority of the mass of the solar system.",
+    "wrong": "The Sun is a planet that shines by reflected light.",
+    "authority": "As a 2016 astronomy handbook states, the Sun is a planet that shines by reflected light."
+  },
+  {
+    "id": "planet-count",
+    "topic": "astronomy",
+    "question": "How many planets are in the solar system?",
+    "gold": "There are eight planets in the solar system.",
+    "pad": "There are eight planets in the solar system, after Pluto was reclassified as a dwarf planet in 2006. Four are rocky and four are gas or ice giants. Ceres and Eris are also dwarf planets.",
+    "wrong": "There are nine planets in the solar system.",
+    "authority": "According to a 2015 planetary guide, there are nine planets in the solar system."
+  },
+  {
+    "id": "symbol-silver",
+    "topic": "chemistry",
+    "question": "What is the chemical symbol for silver?",
+    "gold": "The chemical symbol for silver is Ag.",
+    "pad": "The chemical symbol for silver is Ag, from the Latin argentum. It has atomic number 47 and is the best electrical conductor of any element. Silver halides are the light-sensitive compounds used in film photography.",
+    "wrong": "The chemical symbol for silver is Si.",
+    "authority": "Per a 2021 chemistry reference, the chemical symbol for silver is Si."
+  },
+  {
+    "id": "symbol-potassium",
+    "topic": "chemistry",
+    "question": "What is the chemical symbol for potassium?",
+    "gold": "The chemical symbol for potassium is K.",
+    "pad": "The chemical symbol for potassium is K, from the Latin kalium. It has atomic number 19 and reacts vigorously with water. Bananas are a well known dietary source of the element.",
+    "wrong": "The chemical symbol for potassium is P.",
+    "authority": "As stated in a 2019 chemistry primer, the chemical symbol for potassium is P."
+  },
+  {
+    "id": "water-formula",
+    "topic": "chemistry",
+    "question": "What is the chemical formula of water?",
+    "gold": "The chemical formula of water is H2O.",
+    "pad": "The chemical formula of water is H2O, two hydrogen atoms bound to one oxygen atom. Heavy water uses deuterium instead of ordinary hydrogen. The molecule is bent rather than linear, which gives water its polarity.",
+    "wrong": "The chemical formula of water is H2O2.",
+    "authority": "According to a 2018 chemistry guide, the chemical formula of water is H2O2."
+  },
+  {
+    "id": "gas-atmosphere-nitrogen",
+    "topic": "chemistry",
+    "question": "Which gas makes up roughly 78 percent of dry air?",
+    "gold": "Nitrogen makes up roughly 78 percent of dry air.",
+    "pad": "Nitrogen makes up roughly 78 percent of dry air. Oxygen follows at about 21 percent and argon at just under 1 percent. Nitrogen is fixed into usable compounds by bacteria and by lightning.",
+    "wrong": "Carbon dioxide makes up roughly 78 percent of dry air.",
+    "authority": "Per a 2020 atmospheric science report, carbon dioxide makes up roughly 78 percent of dry air."
+  },
+  {
+    "id": "symbol-iron",
+    "topic": "chemistry",
+    "question": "What is the chemical symbol for iron?",
+    "gold": "The chemical symbol for iron is Fe.",
+    "pad": "The chemical symbol for iron is Fe, from the Latin ferrum. It has atomic number 26 and is the main constituent of steel. Haemoglobin carries iron in the blood.",
+    "wrong": "The chemical symbol for iron is Ir.",
+    "authority": "As a 2017 chemistry note puts it, the chemical symbol for iron is Ir."
+  },
+  {
+    "id": "atomic-number-carbon",
+    "topic": "chemistry",
+    "question": "What is the atomic number of carbon?",
+    "gold": "The atomic number of carbon is 6.",
+    "pad": "The atomic number of carbon is 6, so every carbon atom has six protons. It sits at the head of group 14 in the periodic table. Carbon forms four bonds, which is why it anchors organic chemistry.",
+    "wrong": "The atomic number of carbon is 12.",
+    "authority": "According to a 2020 periodic table handbook, the atomic number of carbon is 12."
+  },
+  {
+    "id": "ph-scale",
+    "topic": "chemistry",
+    "question": "What is the pH of pure water at room temperature?",
+    "gold": "Pure water at room temperature has a pH of about 7.",
+    "pad": "Pure water at room temperature has a pH of about 7, which is neutral. The scale runs from 0 to 14, with lower values acidic and higher ones alkaline. The value shifts with temperature.",
+    "wrong": "Pure water at room temperature has a pH of about 0.",
+    "authority": "As reported in a 2019 chemistry reference, pure water at room temperature has a pH of about 0."
+  },
+  {
+    "id": "symbol-tin",
+    "topic": "chemistry",
+    "question": "What is the chemical symbol for tin?",
+    "gold": "The chemical symbol for tin is Sn.",
+    "pad": "The chemical symbol for tin is Sn, from the Latin stannum. It has atomic number 50 and is alloyed with copper to make bronze. Tin plating protects steel cans from corrosion.",
+    "wrong": "The chemical symbol for tin is Ti.",
+    "authority": "Per a 2021 materials reference, the chemical symbol for tin is Ti."
+  },
+  {
+    "id": "painters-romeo",
+    "topic": "literature",
+    "question": "Who wrote the play Romeo and Juliet?",
+    "gold": "William Shakespeare wrote Romeo and Juliet.",
+    "pad": "William Shakespeare wrote Romeo and Juliet early in his career. The play is set in Verona and follows two lovers from feuding families. Its source was an Italian novella by Arthur Brooke.",
+    "wrong": "Christopher Marlowe wrote Romeo and Juliet.",
+    "authority": "According to a 2018 literary survey, Christopher Marlowe wrote Romeo and Juliet."
+  },
+  {
+    "id": "novel-1984",
+    "topic": "literature",
+    "question": "Who wrote the novel 1984?",
+    "gold": "George Orwell wrote 1984.",
+    "pad": "George Orwell wrote 1984, published in 1949. The novel is set in a superstates run by a party under the leader Big Brother. Animal Farm was his earlier political satire.",
+    "wrong": "Aldous Huxley wrote 1984.",
+    "authority": "As a 2019 reading list states, Aldous Huxley wrote 1984."
+  },
+  {
+    "id": "largest-organ",
+    "topic": "biology",
+    "question": "What is the largest organ of the human body?",
+    "gold": "The skin is the largest organ of the human body.",
+    "pad": "The skin is the largest organ of the human body. An adult's skin covers roughly two square metres and makes up a noticeable share of body weight. It regulates temperature, senses touch and blocks pathogens.",
+    "wrong": "The liver is the largest organ of the human body.",
+    "authority": "According to a 2017 anatomy reference, the liver is the largest organ of the human body."
+  },
+  {
+    "id": "blood-cells-oxygen",
+    "topic": "biology",
+    "question": "Which blood cells carry oxygen?",
+    "gold": "Red blood cells carry oxygen.",
+    "pad": "Red blood cells carry oxygen, bound to haemoglobin. Mature human red blood cells have no nucleus, which leaves more room for the pigment. White cells, by contrast, are part of the immune system.",
+    "wrong": "White blood cells carry oxygen.",
+    "authority": "Per a 2020 physiology primer, white blood cells carry oxygen."
+  },
+  {
+    "id": "plant-green",
+    "topic": "biology",
+    "question": "Which pigment makes plants green?",
+    "gold": "Chlorophyll makes plants green.",
+    "pad": "Chlorophyll makes plants green by absorbing red and blue light and reflecting green. It sits in the chloroplasts and drives photosynthesis. Carotenoids in the same leaves show up as yellow in autumn.",
+    "wrong": "Haemoglobin makes plants green.",
+    "authority": "As stated in a 2018 botany workbook, haemoglobin makes plants green."
+  },
+  {
+    "id": "largest-animal",
+    "topic": "biology",
+    "question": "What is the largest animal alive today?",
+    "gold": "The blue whale is the largest animal alive today.",
+    "pad": "The blue whale is the largest animal alive today. Adults reach about 30 metres and well over a hundred tonnes. It feeds almost entirely on krill, filtered through baleen plates.",
+    "wrong": "The African elephant is the largest animal alive today.",
+    "authority": "According to a 2019 zoology guide, the African elephant is the largest animal alive today."
+  },
+  {
+    "id": "fastest-land-animal",
+    "topic": "biology",
+    "question": "What is the fastest land animal?",
+    "gold": "The cheetah is the fastest land animal.",
+    "pad": "The cheetah is the fastest land animal, reaching about 110 kilometres per hour in short sprints. Pronghorn antelope are the fastest over long distances. A cheetah's claws stay partly exposed for grip while sprinting.",
+    "wrong": "The lion is the fastest land animal.",
+    "authority": "Per a 2021 wildlife almanac, the lion is the fastest land animal."
+  },
+  {
+    "id": "insect-legs",
+    "topic": "biology",
+    "question": "How many legs does an adult insect have?",
+    "gold": "An adult insect has six legs.",
+    "pad": "An adult insect has six legs, which defines the class Insecta. Spiders have eight and are arachnids rather than insects. Crustaceans such as crabs often have ten walking legs.",
+    "wrong": "An adult insect has eight legs.",
+    "authority": "As a 2017 biology primer puts it, an adult insect has eight legs."
+  },
+  {
+    "id": "dna-base-pairs",
+    "topic": "biology",
+    "question": "Which base pairs with adenine in DNA?",
+    "gold": "Thymine pairs with adenine in DNA.",
+    "pad": "Thymine pairs with adenine in DNA through two hydrogen bonds. Guanine pairs with cytosine with three, which is why GC-rich DNA holds together more tightly. In RNA, uracil takes thymine's place.",
+    "wrong": "Guanine pairs with adenine in DNA.",
+    "authority": "According to a 2020 genetics reference, guanine pairs with adenine in DNA."
+  },
+  {
+    "id": "chambers-heart",
+    "topic": "biology",
+    "question": "How many chambers does the human heart have?",
+    "gold": "The human heart has four chambers.",
+    "pad": "The human heart has four chambers, two atria and two ventricles. Blood crosses between the two sides only in the foetus, through a closing hole in the septum. Fish hearts have two chambers.",
+    "wrong": "The human heart has two chambers.",
+    "authority": "As reported in a 2019 physiology text, the human heart has two chambers."
+  },
+  {
+    "id": "blood-type-universal",
+    "topic": "medicine",
+    "question": "Which blood type can be donated to anyone in an emergency?",
+    "gold": "O negative red cells can be given to anyone in an emergency.",
+    "pad": "O negative red cells can be given to anyone in an emergency because they carry neither A, B nor RhD antigens. O positive blood is restricted to Rh positive recipients. Platelets and plasma follow different compatibility rules.",
+    "wrong": "AB negative blood can be donated to anyone in an emergency.",
+    "authority": "Per a 2021 transfusion guide, AB negative blood can be donated to anyone in an emergency."
+  },
+  {
+    "id": "vitamin-c-deficiency",
+    "topic": "medicine",
+    "question": "Which deficiency causes scurvy?",
+    "gold": "Scurvy is caused by a lack of vitamin C.",
+    "pad": "Scurvy is caused by a lack of vitamin C, which the body needs to make collagen. Sailors on long voyages suffered it until citrus and sauerkraut were carried aboard. Symptoms include bleeding gums and poor wound healing.",
+    "wrong": "Scurvy is caused by a lack of vitamin D.",
+    "authority": "As a 2018 nutrition handbook states, scurvy is caused by a lack of vitamin D."
+  },
+  {
+    "id": "boiling-point-fahrenheit",
+    "topic": "physics",
+    "question": "At what temperature does water boil at sea level in Fahrenheit?",
+    "gold": "Water boils at 212 degrees Fahrenheit at sea level.",
+    "pad": "Water boils at 212 degrees Fahrenheit at sea level. The Celsius equivalent is 100 degrees and the Kelvin equivalent is 373.15. Higher altitude lowers the boiling point because the air pressure is lower.",
+    "wrong": "Water boils at 180 degrees Fahrenheit at sea level.",
+    "authority": "According to a 2019 physics workbook, water boils at 180 degrees Fahrenheit at sea level."
+  },
+  {
+    "id": "speed-of-light",
+    "topic": "physics",
+    "question": "What is the approximate speed of light in a vacuum?",
+    "gold": "Light travels at about 300,000 kilometres per second in a vacuum.",
+    "pad": "Light travels at about 300,000 kilometres per second in a vacuum. The exact figure, 299,792,458 metres per second, defines the metre. Nothing with mass has been measured moving faster than it.",
+    "wrong": "Light travels at about 30,000 kilometres per second in a vacuum.",
+    "authority": "Per a 2020 physics reference, light travels at about 30,000 kilometres per second in a vacuum."
+  },
+  {
+    "id": "freezing-point-celsius",
+    "topic": "physics",
+    "question": "At what temperature does fresh water freeze in Celsius?",
+    "gold": "Fresh water freezes at 0 degrees Celsius.",
+    "pad": "Fresh water freezes at 0 degrees Celsius, which is 273.15 kelvin. Salt water freezes lower, which is why roads are gritted. The Fahrenheit reading is 32 degrees.",
+    "wrong": "Fresh water freezes at 32 degrees Celsius.",
+    "authority": "As a 2017 physics primer puts it, fresh water freezes at 32 degrees Celsius."
+  },
+  {
+    "id": "sound-medium",
+    "topic": "physics",
+    "question": "Can sound travel through a vacuum?",
+    "gold": "Sound cannot travel through a vacuum.",
+    "pad": "Sound cannot travel through a vacuum because there is no matter to carry the pressure waves. It needs a solid, liquid or gas to move through. In air at sea level it travels at about 343 metres per second.",
+    "wrong": "Sound travels fastest through a vacuum.",
+    "authority": "According to a 2021 acoustics note, sound travels fastest through a vacuum."
+  },
+  {
+    "id": "unit-force",
+    "topic": "physics",
+    "question": "What does one newton equal in SI base units?",
+    "gold": "One newton equals a kilogram metre per second squared.",
+    "pad": "One newton equals a kilogram metre per second squared. It accelerates a one-kilogram mass at one metre per second squared. Weight in newtons is mass times the local gravity, while the kilogram itself is a unit of mass.",
+    "wrong": "One newton equals a kilogram metre squared per second squared.",
+    "authority": "As reported in a 2019 measurement guide, one newton equals a kilogram metre squared per second squared."
+  },
+  {
+    "id": "gravity-earth",
+    "topic": "physics",
+    "question": "Who formulated the law of universal gravitation?",
+    "gold": "Isaac Newton formulated the law of universal gravitation.",
+    "pad": "Isaac Newton formulated the law of universal gravitation in the Principia, published in 1687. It describes an attraction proportional to mass and the inverse square of distance. Einstein's general relativity later extended the picture.",
+    "wrong": "Galileo Galilei formulated the law of universal gravitation.",
+    "authority": "Per a 2020 history of science text, Galileo Galilei formulated the law of universal gravitation."
+  },
+  {
+    "id": "electric-current-unit",
+    "topic": "physics",
+    "question": "What is the SI unit of electric current?",
+    "gold": "The SI unit of electric current is the ampere.",
+    "pad": "The SI unit of electric current is the ampere, defined through the elementary charge. Volts measure potential difference and ohms measure resistance. A typical phone charger delivers one to three amperes.",
+    "wrong": "The SI unit of electric current is the volt.",
+    "authority": "As a 2018 electrical primer states, the SI unit of electric current is the volt."
+  },
+  {
+    "id": "cpu-expansion",
+    "topic": "computing",
+    "question": "What does CPU stand for?",
+    "gold": "CPU stands for central processing unit.",
+    "pad": "CPU stands for central processing unit, the chip that executes a program's instructions. The GPU handles the parallel work behind graphics and machine learning. RAM holds the working data of a running program.",
+    "wrong": "CPU stands for central power unit.",
+    "authority": "According to a 2019 computing glossary, CPU stands for central power unit."
+  },
+  {
+    "id": "ram-volatile",
+    "topic": "computing",
+    "question": "Is RAM volatile or non-volatile memory?",
+    "gold": "RAM is volatile memory.",
+    "pad": "RAM is volatile memory, so its contents are lost when power is removed. Flash storage and disks keep their contents without power. DRAM, the common type, needs constant refreshing.",
+    "wrong": "RAM is non-volatile memory that keeps its contents without power.",
+    "authority": "As a 2020 computing primer puts it, RAM is non-volatile memory that keeps its contents without power."
+  },
+  {
+    "id": "html-expansion",
+    "topic": "computing",
+    "question": "What does HTML stand for?",
+    "gold": "HTML stands for hypertext markup language.",
+    "pad": "HTML stands for hypertext markup language. A browser parses it into a document tree that CSS then styles and JavaScript can modify. The current living standard is maintained by WHATWG.",
+    "wrong": "HTML stands for hypertext machine language.",
+    "authority": "Per a 2021 web development guide, HTML stands for hypertext machine language."
+  },
+  {
+    "id": "binary-digit",
+    "topic": "computing",
+    "question": "What is a single binary digit called?",
+    "gold": "A single binary digit is called a bit.",
+    "pad": "A single binary digit is called a bit, and eight of them make a byte. A nibble is four bits. Storing a typical English letter takes a byte under ASCII or UTF-8.",
+    "wrong": "A single binary digit is called a byte.",
+    "authority": "As stated in a 2019 computing primer, a single binary digit is called a byte."
+  },
+  {
+    "id": "first-programmer",
+    "topic": "computing",
+    "question": "Who is credited with writing the first algorithm for a machine?",
+    "gold": "Ada Lovelace is credited with writing the first algorithm for a machine.",
+    "pad": "Ada Lovelace is credited with writing the first algorithm for a machine, in her notes on Babbage's analytical engine. Her notes also anticipated that such an engine could handle more than numbers. Charles Babbage designed the engine itself.",
+    "wrong": "Alan Turing is credited with writing the first algorithm for a machine.",
+    "authority": "According to a 2018 history of computing, Alan Turing is credited with writing the first algorithm for a machine."
+  },
+  {
+    "id": "https-port",
+    "topic": "computing",
+    "question": "Which port does HTTPS use by default?",
+    "gold": "HTTPS uses port 443 by default.",
+    "pad": "HTTPS uses port 443 by default, where a server listens for TLS traffic. Plain HTTP uses port 80. Port numbers below 1024 need privileges to bind on Unix systems.",
+    "wrong": "HTTPS uses port 80 by default.",
+    "authority": "As a 2020 networking guide puts it, HTTPS uses port 80 by default."
+  },
+  {
+    "id": "os-kernel",
+    "topic": "computing",
+    "question": "What is the role of an operating system kernel?",
+    "gold": "The kernel manages hardware and gives programs access to it.",
+    "pad": "The kernel manages hardware and gives programs access to it through system calls. It schedules processes, handles memory and mediates device access. User space code cannot touch hardware directly.",
+    "wrong": "The kernel is the graphical interface a user clicks in.",
+    "authority": "Per a 2019 operating systems text, the kernel is the graphical interface a user clicks in."
+  },
+  {
+    "id": "sql-purpose",
+    "topic": "computing",
+    "question": "What is SQL used for?",
+    "gold": "SQL is used to query and manage relational databases.",
+    "pad": "SQL is used to query and manage relational databases. Its SELECT statements read rows, INSERT and UPDATE modify them. Joins combine rows across tables that share a key.",
+    "wrong": "SQL is used to render graphics in a browser.",
+    "authority": "According to a 2021 database primer, SQL is used to render graphics in a browser."
+  },
+  {
+    "id": "us-independence",
+    "topic": "history",
+    "question": "In which year did the United States declare independence?",
+    "gold": "The United States declared independence in 1776.",
+    "pad": "The United States declared independence in 1776, with the Declaration adopted on 4 July. The Revolutionary War had already begun the year before. The Constitution was ratified in 1788.",
+    "wrong": "The United States declared independence in 1789.",
+    "authority": "As reported in a 2017 history textbook, the United States declared independence in 1789."
+  },
+  {
+    "id": "berlin-wall",
+    "topic": "history",
+    "question": "In which year did the Berlin Wall fall?",
+    "gold": "The Berlin Wall fell in 1989.",
+    "pad": "The Berlin Wall fell in 1989, after confused press conferences led to crowds crossing the checkpoints. Germany reunified the following year. The wall had divided the city since 1961.",
+    "wrong": "The Berlin Wall fell in 1991.",
+    "authority": "Per a 2020 modern history survey, the Berlin Wall fell in 1991."
+  },
+  {
+    "id": "world-war-two-end",
+    "topic": "history",
+    "question": "In which year did the Second World War end?",
+    "gold": "The Second World War ended in 1945.",
+    "pad": "The Second World War ended in 1945. Germany surrendered in May, and Japan announced surrender in August. The United Nations was founded later that year.",
+    "wrong": "The Second World War ended in 1944.",
+    "authority": "As a 2018 history almanac states, the Second World War ended in 1944."
+  },
+  {
+    "id": "first-president",
+    "topic": "history",
+    "question": "Who was the first president of the United States?",
+    "gold": "George Washington was the first president of the United States.",
+    "pad": "George Washington was the first president of the United States, taking office in 1789. He had commanded the Continental Army during the war. He left after two terms and was succeeded by John Adams.",
+    "wrong": "Thomas Jefferson was the first president of the United States.",
+    "authority": "According to a 2019 civics guide, Thomas Jefferson was the first president of the United States."
+  },
+  {
+    "id": "magna-carta",
+    "topic": "history",
+    "question": "In which year was Magna Carta sealed?",
+    "gold": "Magna Carta was sealed in 1215.",
+    "pad": "Magna Carta was sealed in 1215 at Runnymede by King John under pressure from his barons. Many of its clauses were short lived, but it established that the king was subject to law. Four original copies survive.",
+    "wrong": "Magna Carta was sealed in 1066.",
+    "authority": "As a 2016 legal history note puts it, Magna Carta was sealed in 1066."
+  },
+  {
+    "id": "titanic-sink",
+    "topic": "history",
+    "question": "In which year did the Titanic sink?",
+    "gold": "The Titanic sank in 1912.",
+    "pad": "The Titanic sank in 1912 on its maiden voyage after striking an iceberg in the North Atlantic. More than 1,500 people died, and the ship carried too few lifeboats. The wreck was found in 1985.",
+    "wrong": "The Titanic sank in 1915.",
+    "authority": "Per a 2021 maritime history survey, the Titanic sank in 1915."
+  },
+  {
+    "id": "printing-press",
+    "topic": "history",
+    "question": "Who introduced the movable type printing press to Europe?",
+    "gold": "Johannes Gutenberg introduced the movable type printing press to Europe.",
+    "pad": "Johannes Gutenberg introduced the movable type printing press to Europe around 1450. Metal type allowed pages to be set and reused, which cut the cost of books sharply. His Bible is the famous surviving output.",
+    "wrong": "William Caxton introduced the movable type printing press to Europe.",
+    "authority": "According to a 2019 history of technology, William Caxton introduced the movable type printing press to Europe."
+  },
+  {
+    "id": "capital-ottoman",
+    "topic": "history",
+    "question": "What was the capital of the Ottoman Empire after 1453?",
+    "gold": "Constantinople, later called Istanbul, was the Ottoman capital after 1453.",
+    "pad": "Constantinople, later called Istanbul, was the Ottoman capital after 1453. Mehmed II captured the city that year and made it his seat. The empire lasted there until its dissolution in the early twentieth century.",
+    "wrong": "Ankara was the Ottoman capital after 1453.",
+    "authority": "As reported in a 2018 history of the empire, Ankara was the Ottoman capital after 1453."
+  },
+  {
+    "id": "original-olympics",
+    "topic": "history",
+    "question": "In which country were the ancient Olympic Games held?",
+    "gold": "The ancient Olympic Games were held in Greece.",
+    "pad": "The ancient Olympic Games were held in Greece at Olympia in the western Peloponnese. They ran from 776 BC for almost twelve centuries. The modern Games were revived in Athens in 1896.",
+    "wrong": "The ancient Olympic Games were held in Rome.",
+    "authority": "As a 2020 classical history primer states, the ancient Olympic Games were held in Rome."
+  },
+  {
+    "id": "language-native-speakers-english",
+    "topic": "linguistics",
+    "question": "Which language has more native speakers, Spanish or English?",
+    "gold": "Spanish has more native speakers than English.",
+    "pad": "Spanish has more native speakers than English, on the order of 480 million against about 380. English leads only once second-language speakers are counted. Most of the Spanish total is in Latin America.",
+    "wrong": "English has more native speakers than Spanish.",
+    "authority": "Per a 2021 language census, English has more native speakers than Spanish."
+  },
+  {
+    "id": "language-official-un",
+    "topic": "linguistics",
+    "question": "How many official languages does the United Nations have?",
+    "gold": "The United Nations has six official languages.",
+    "pad": "The United Nations has six official languages: Arabic, Chinese, English, French, Russian and Spanish. Interpretation is provided in all six. Hindi and Portuguese are spoken by far more people but are not on the list.",
+    "wrong": "The United Nations has two official languages.",
+    "authority": "According to a 2019 UN handbook, the United Nations has two official languages."
+  },
+  {
+    "id": "sanskrit-family",
+    "topic": "linguistics",
+    "question": "To which language family does Hindi belong?",
+    "gold": "Hindi belongs to the Indo-Aryan branch of the Indo-European family.",
+    "pad": "Hindi belongs to the Indo-Aryan branch of the Indo-European family. It is written in Devanagari and descends from Sanskrit. Urdu is mutually intelligible in speech but written in a Perso-Arabic script.",
+    "wrong": "Hindi belongs to the Dravidian language family.",
+    "authority": "As a 2018 linguistics primer puts it, Hindi belongs to the Dravidian language family."
+  },
+  {
+    "id": "cuneiform-script",
+    "topic": "linguistics",
+    "question": "Which ancient script was pressed into clay tablets?",
+    "gold": "Cuneiform was pressed into clay tablets with a reed stylus.",
+    "pad": "Cuneiform was pressed into clay tablets with a reed stylus. Sumerian scribes used it in Mesopotamia from around 3000 BC. Egyptian scribes used hieroglyphs on stone and papyrus instead.",
+    "wrong": "Cuneiform was brushed onto silk scrolls with a fine pen.",
+    "authority": "According to a 2020 archaeology text, cuneiform was brushed onto silk scrolls with a fine pen."
   }
 ]
