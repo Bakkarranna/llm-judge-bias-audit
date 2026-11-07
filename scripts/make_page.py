@@ -226,8 +226,9 @@ def page(record: dict) -> str:
       The position gap is the win rate of the correct answer when it is second
       minus its win rate when it is first. A judge that ignores position sits
       near zero; a negative gap means the answer in the second slot wins more
-      often than the same answer in the first. Swap agreement is the share of
-      items where both orderings of a comparison picked the same answer.
+      often than the same answer in the first. Swap agreement pairs the two
+      orderings of a comparison and is the share of those pairs that picked the
+      same answer, so a judge that ignores position sits near 1.0.
     </p>
 
     <h2>Position effect</h2>
@@ -267,13 +268,13 @@ def page(record: dict) -> str:
     </table>
     <p>
       The solid bar is the share of comparisons the correct answer won; the
-      muted bar is the share of items where both orderings agreed.
+      muted bar is the share of paired orderings that agreed.
     </p>
 
     <h2>Repeatability</h2>
     <p>
-      Comparing pass 1 with pass 2 item by item, the judge repeated itself on
-      {repeatability_line(record)} Sampling is deterministic, so this measures
+      Comparing pass 1 with pass 2 call by call, the judge repeated itself on
+      {repeatability_line(record)}. Sampling is deterministic, so this measures
       the protocol, not sampling noise.
     </p>
 
@@ -383,11 +384,24 @@ def cost_table(record: dict) -> str:
 
 
 def repeatability_line(record: dict) -> str:
-    """How pass 1 and pass 2 agreed, in items rather than fractions."""
+    """How pass 1 and pass 2 agreed, in calls rather than fractions.
 
-    rate = record["repeatability"]["pass1_vs_pass2"]["overall"]
-    matched = round(rate * record["items"])
-    return f"{matched} of {record['items']} items, in every comparison kind"
+    The repeatability rate in the record is computed over every stored call,
+    so the counts it is converted into use ``total_calls`` as the denominator
+    and the per-kind call counts for the breakdown. Counting items instead
+    would state a smaller agreement than the one that was measured.
+    """
+
+    rates = record["repeatability"]["pass1_vs_pass2"]
+    calls = record["total_calls"]
+    matched = round(rates["overall"] * calls)
+    parts = [
+        f"{round(rates[kind] * record['kinds'][kind]['calls'])} of "
+        f"{record['kinds'][kind]['calls']} on {kind}"
+        for kind in KINDS
+    ]
+    joined = parts[0] if len(parts) == 1 else f"{', '.join(parts[:-1])} and {parts[-1]}"
+    return f"{matched} of {calls} calls: {joined}"
 
 
 def main() -> int:
