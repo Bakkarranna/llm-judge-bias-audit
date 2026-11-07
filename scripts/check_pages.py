@@ -10,23 +10,95 @@ README and ``results/audit.json`` quote one artifact.
 
 Run it when the report is regenerated, so the status stored beside the numbers
 is the one the site answered at generation time.
+
+The probe URL is built from the account that owns this repository, read from the
+``origin`` remote, so a typo cannot send the request to a host that does not
+exist -- any nonexistent ``*.github.io`` host answers with the same 404 page as a
+site nobody is serving. ``check_host`` refuses to run when the two disagree.
 """
 
 from __future__ import annotations
 
 import argparse
+import os
+import subprocess
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+REPO_NAME = "llm-judge-bias-audit"
 sys.path.insert(0, str(ROOT / "src"))
 
 from llmjudge.metrics import load_record, write_record  # noqa: E402
 
-PAGES_URL = "https://bakkarrarna.github.io/llm-judge-bias-audit/"
+
+def _remote_owner() -> str | None:
+    """The account that owns this checkout, read from the ``origin`` remote."""
+
+    try:
+        done = subprocess.run(
+            ["git", "remote", "get-url", "origin"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            timeout=15,
+        )
+    except (OSError, subprocess.SubprocessError):
+        return None
+    if done.returncode != 0:
+        return None
+    remote = done.stdout.strip()
+    if "://" not in remote:
+        remote = "https://" + remote.replace(":", "/", 1)
+    parsed = urllib.parse.urlparse(remote)
+    parts = [part for part in parsed.path.split("/") if part]
+    if parsed.netloc.endswith("github.com") and parts:
+        return parts[0]
+    return None
+
+
+def _pages_url() -> str:
+    """The published report's URL for this repository.
+
+    The host comes from the account that owns the checkout: GitHub serves every
+    ``*.github.io`` host, and a misspelled one answers with the same 404 page as
+    a site nobody is serving, which reads as an outage. ``PAGES_URL`` overrides
+    it for a deliberate probe of another host.
+    """
+
+    override = os.environ.get("PAGES_URL")
+    if override:
+        return override
+    owner = _remote_owner() or "Bakkarrana"
+    return f"https://{owner.lower()}.github.io/{REPO_NAME}/"
+
+
+def check_host() -> str | None:
+    """Refuse a URL whose host is not this repository's account.
+
+    A one-letter typo in the host probes a URL that cannot exist, and that host
+    answers the same 404 page as a site nobody is serving, so the host is checked
+    against the account that owns the checkout before the request is made.
+    """
+
+    owner = _remote_owner()
+    if owner is None:
+        return None
+    host = urllib.parse.urlparse(PAGES_URL).netloc
+    expected = f"{owner.lower()}.github.io"
+    if host != expected:
+        raise SystemExit(
+            f"PAGES_URL host {host!r} does not match the account {owner!r} that "
+            f"owns this repository; expected {expected!r}."
+        )
+    return host
+
+
+PAGES_URL = _pages_url()
 TIMEOUT_SECONDS = 20.0
 
 
@@ -71,6 +143,7 @@ def main() -> int:
     parser.add_argument("--record", default=str(ROOT / "results" / "audit.json"))
     args = parser.parse_args()
 
+    check_host()
     status = refresh(Path(args.record))
     url = status["url"]
     if status["error"] is not None:
