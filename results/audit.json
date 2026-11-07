@@ -12175,5 +12175,11 @@
       "completion_tokens": 2
     }
   ],
-  "notes": "100 items, 600 comparisons per pass, 2 passes, temperature 0 and seed 42, 2966 s of wall clock. The judge is asked for exactly one word, A or B; any other reply is counted as unparsed rather than guessed at."
+  "notes": "100 items, 600 comparisons per pass, 2 passes, temperature 0 and seed 42, 2966 s of wall clock. The judge is asked for exactly one word, A or B; any other reply is counted as unparsed rather than guessed at.",
+  "pages_status": {
+    "url": "https://bakkarrarna.github.io/llm-judge-bias-audit/",
+    "http_status": 404,
+    "checked_at": "2026-11-07T18:39:18Z",
+    "error": null
+  }
 }

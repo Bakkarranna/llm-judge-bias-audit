@@ -296,9 +296,15 @@ def page(record: dict) -> str:
       </tbody>
     </table>
 
+    <h2>Published page</h2>
+    <p>
+      {served_status_paragraph(record)}
+    </p>
+
     <footer>
       Repository: <a href="https://github.com/Bakkarranna/llm-judge-bias-audit">Bakkarranna/llm-judge-bias-audit</a>.
       The page regenerates from <code>results/audit.json</code> with
+      <code>python scripts/check_pages.py</code> and
       <code>python scripts/make_page.py</code>.
     </footer>
     """
@@ -381,6 +387,35 @@ def cost_table(record: dict) -> str:
             )
         )
     return "\n".join(rows)
+
+
+def served_status_paragraph(record: dict) -> str:
+    """What the published URL answered when this page was generated.
+
+    A record written before the status was measured says nothing here, so the
+    paragraph reports that instead of guessing.
+    """
+
+    status = record.get("pages_status")
+    if not status:
+        return (
+            "No HTTP status is stored with this record; rerun "
+            "<code>python scripts/check_pages.py</code> to measure it."
+        )
+    if status.get("error") is not None:
+        return (
+            f"The published page at {status.get('url', 'the Pages URL')} could not "
+            f"be requested when this page was generated ({status['error']})."
+        )
+    served = "is being served" if status["http_status"] == 200 else "is not being served"
+    return (
+        f"The published page at {status['url']} was requested when this page was "
+        f"generated and answered HTTP {status['http_status']} at "
+        f"{status['checked_at']}, so the site {served} and this committed copy is "
+        "the record. The status is stored with the measured numbers as "
+        "<code>pages_status</code> in <code>results/audit.json</code>, refreshed by "
+        "<code>python scripts/check_pages.py</code> on each regeneration."
+    )
 
 
 def repeatability_line(record: dict) -> str:
