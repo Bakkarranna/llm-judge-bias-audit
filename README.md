@@ -225,5 +225,8 @@ the protocol self-check.
   the rates describe calls that answered in the expected form. In this run that
   was all 1,200 calls.
 
-The report is published as GitHub Pages from `docs/`:
+The report is generated into `docs/` and the Pages workflow publishes it on every push.
+As of 2026-11-07 that URL returns HTTP 404: the deploy job reports success and the
+deployment artifact exists, but the API still reports the Pages site as unbuilt, so the
+committed copy of the report is the record:
 <https://bakkarrarna.github.io/llm-judge-bias-audit/>
