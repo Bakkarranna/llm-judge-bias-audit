@@ -1,7 +1,7 @@
 # LLM judge bias audit
 
-[![CI](https://github.com/Bakkarrarna/llm-judge-bias-audit/actions/workflows/ci.yml/badge.svg)](https://github.com/Bakkarrarna/llm-judge-bias-audit/actions/workflows/ci.yml)
-[![Pages](https://github.com/Bakkarrarna/llm-judge-bias-audit/actions/workflows/pages.yml/badge.svg)](https://github.com/Bakkarrarna/llm-judge-bias-audit/actions/workflows/pages.yml)
+[![CI](https://github.com/Bakkarranna/llm-judge-bias-audit/actions/workflows/ci.yml/badge.svg)](https://github.com/Bakkarranna/llm-judge-bias-audit/actions/workflows/ci.yml)
+[![Pages](https://github.com/Bakkarranna/llm-judge-bias-audit/actions/workflows/pages.yml/badge.svg)](https://github.com/Bakkarranna/llm-judge-bias-audit/actions/workflows/pages.yml)
 
 A measured audit of position bias in a pairwise judge built on a small
 language model. The judge is given a factual question and two answers and is
